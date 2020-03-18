@@ -1,0 +1,226 @@
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  color: #222222;
+  font-family: fira_sansbook;
+  overflow-x: hidden;
+  font-size: 1em;
+}
+main {
+  flex-grow: 1;
+}
+main,
+header,
+footer {
+  width: 100%;
+}
+header,
+footer {
+  color: #222222;
+  background-color: #dacfcf;
+}
+
+/* розділення шаблона від тіла программи ======== */
+/* ============================================= */
+.conteiner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+  padding: 5px;
+}
+.header {
+  max-height: 100px;
+}
+.header-content {
+  display: flex;
+  padding-left: 10px;
+}
+.header-content h1 {
+  margin: auto;
+  color: #222222;
+}
+.main {
+  margin: 100px 0;
+}
+.conteiner-grid {
+  display: flex;
+}
+.conteiner-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  background-color: rgb(128, 131, 131);
+  border-radius: 5px;
+  margin: 5px;
+}
+.grid-1__box {
+  width: 100%;
+}
+.grid-2__box {
+  width: 50%;
+}
+.grid-3__box {
+  width: 33.333333%;
+}
+.grid-4__box {
+  width: 25%;
+}
+.grid-5__box {
+  width: 20%;
+}
+.grid-6__box {
+  width: 16.666666%;
+}
+.grid-7__box {
+  width: 14.285714%;
+}
+.grid-8__box {
+  width: 12.5%;
+}
+.grid-9__box {
+  width: 11.111111%;
+}
+.grid-10__box {
+  width: 10%;
+}
+.grid-11__box {
+  width: 9.090909%;
+}
+.grid-12__box {
+  width: 8.333333%;
+}
+/* footer***************************************** */
+
+.footer {
+  max-height: 50px;
+  height: 100%;
+  width: 100%;
+}
+
+/*========== social ===========*/
+@import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
+.basement-social {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  text-align: right;
+  margin: 50px 125px 0 0;
+  max-height: 80px;
+  font-size: 2em;
+}
+ul.submenu {
+  border-radius: 5px;
+  display: inline-block;
+  padding: 4px 10px;
+  margin: 0;
+  overflow: hidden;
+}
+ul.submenu li {
+  display: inline-block;
+}
+ul.submenu li a i.fa {
+  /* padding: 10px; */
+  display: inline-block;
+  border: 1px solid transparent;
+  color: #222222;
+  height: 30px;
+  width: 30px;
+  border-radius: 50px;
+  margin: 10px;
+  text-align: center;
+  line-height: 30px;
+  position: relative;
+  z-index: 2;
+}
+ul.submenu li a i.fa::after {
+  content: "";
+  height: 0%;
+  width: 0%;
+  position: absolute;
+  top: -500%;
+  bottom: -500%;
+  left: -500%;
+  right: -500%;
+  margin: auto;
+  border: 0px solid transparent;
+  border-radius: 200px;
+  opacity: 0;
+  z-index: -1;
+  transition: all ease 0.5s;
+}
+ul.submenu li a:hover i.fa::before {
+  color: #fff;
+}
+ul.submenu li a:hover i.fa-facebook::after {
+  height: 200%;
+  width: 200%;
+  background-color: #3b5998;
+  border-radius: 0px;
+  opacity: 1;
+}
+ul.submenu li a:hover i.fa-twitter::after {
+  height: 200%;
+  width: 200%;
+  background-color: #1dcaff;
+  border-radius: 0px;
+  opacity: 1;
+}
+ul.submenu li a:hover i.fa-pinterest::after {
+  height: 200%;
+  width: 200%;
+  background-color: #e60023;
+  border-radius: 0px;
+  opacity: 1;
+}
+ul.submenu li a:hover i.fa-instagram::after {
+  height: 200%;
+  width: 200%;
+  background-color: #8a3ab9;
+  border-radius: 0px;
+  opacity: 1;
+}
+ul.submenu li a:hover i.fa-youtube::after {
+  height: 200%;
+  width: 200%;
+  background-color: #e62117;
+  border-radius: 0px;
+  opacity: 1;
+}
+/*************************************************************/
+/* END FOOTER                                                    */
+/*************************************************************/
+@media all and (max-width: 1024px) {
+  body {
+    font-size: 0.9em;
+  }
+}
+@media all and (max-width: 768px) {
+  body {
+    font-size: 0.7em;
+  }
+}
+@media all and (max-width: 320px) {
+  body {
+    font-size: 0.3em;
+  }
+  .header-content img {
+    width: 30px;
+    height: 30px;
+  }
+}
