@@ -1,3 +1,11 @@
+// например, проверим, соответствует ли указанный медиа запрос (screen and (max-width: 543px)) устройству
+// результат проверки можно получить с помощью свойства matches (true или false)
+if (window.matchMedia("screen and (max-width: 543px)").matches) {
+  // ... действия, если устройство отвечает медиа запросу
+} else {
+  // ... действия, если устройство не соответствует значениям медиа запроса
+}
+
 /* logo ===========================
 document.getElementById('logo').onclick = function() {
   if ( this.style.animationPlayState != 'running' ) {

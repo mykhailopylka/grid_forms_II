@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="uk">
-  <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="grid forms" />
-    <meta name="keywords" content="grid forms" />
+    <meta name="description" content="grid forms II" />
+    <meta name="keywords" content="grid forms II" />
     <link rel="icon" href="img/favicon.png" type="image" />
     <meta
       name="viewport"
@@ -14,13 +13,30 @@
       type="text/css"
       href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
     />
-    <!--load all styles Font Awesome-->
     <link rel="stylesheet" href="css/normalize.css" />
+        <!--load all styles Font Awesome-->
     <link rel="stylesheet" href="fonts/font.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Grid's forms</title>
+    <!-- адаптивні налаштуванні екранів -->
+    <!-- <link rel="stylesheet" href="media_list.css" /> -->
+    <!-- <link rel="stylesheet" media="(max-width: 640px)" href="max-640px.css">
+      <link rel="stylesheet" media="(min-width: 640px)" href="min-640px.css">
+      <link rel="stylesheet" media="(orientation: portrait)" href="portrait.css">
+      <link rel="stylesheet" media="(orientation: landscape)" href="landscape.css">
+        <style>
+          @media (min-width: 500px) and (max-width: 600px) {
+            h1 {
+              color:fuchsia;
+            }
+            .desc:after {
+              content:"Infact, it's between 500px and 600px wide.";
+            }
+          }
+        </style> -->
+    <title>Grid's forms II</title>
     <!--[if lt IE 9]>
       <script src="//html5shiv.google.com/svn/trunk/html5.js"></script>
+      <script src="//css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
     <![endif]-->
     <!-- <script src="js/script.js"></script> -->
   </head>
@@ -38,7 +54,7 @@
     <main class="main">
       <div class="conteiner">
         <div class="conteiner-grid">
-          <div class="conteiner-box conteiner-box grid-1">
+          <div class="conteiner-box grid-1__box">
             <span>
               Grid 1
             </span>
@@ -170,7 +186,7 @@
           <div class="conteiner-box grid-11__box"></div>
         </div>
         <div class="conteiner-grid">
-          <div class="conteiner-box grid-12__box">
+          <div class="conteiner-box grid-12__box  ">
             <span>
               Grid 12
             </span>

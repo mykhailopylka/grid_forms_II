@@ -1,0 +1,67 @@
+@media (max-width: 1024px) {
+  .grid__media {
+    max-width: 100%;
+  }
+  .grid__media span {
+    background-color: aqua;
+  }
+}
+@media (max-width: 768px) {
+  .grid__media {
+    max-width: 50%;
+  }
+  .grid__media span {
+    background-color: #d30069;
+  }
+}
+@media (max-width: 640px) {
+  .grid__media {
+    max-width: 40%;
+  }
+  .grid__media span {
+    background-color: #003280;
+  }
+}
+
+/* simple */
+/* @media all and (max-width: 1024px) {
+  .conteiner {
+    max-width: 100%;
+  }
+}
+@media all and (max-width: 768px) {
+  .conteiner {
+    max-width: 50%;
+  }
+}
+@media all and (max-width: 640px) {
+  .conteiner {
+    max-width: 40%;
+  }
+} */
+
+/* stylesheet for bootstrap */
+/* xs (<=543px) */
+@media (max-width: 575px) {
+  /* ...; */
+}
+
+/* sm (>=576 і <=767) */
+@media (min-width: 576px) and (max-width: 767px) {
+  /* ...; */
+}
+
+/* md (>=768 і <=991) */
+@media (min-width: 768px) and (max-width: 991px) {
+  /* ...; */
+}
+
+/* lg (>=992 і <=1199) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* ...; */
+}
+
+/* xl (>=1200) */
+@media (min-width: 1200px) {
+  /* ...; */
+}

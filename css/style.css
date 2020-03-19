@@ -38,9 +38,10 @@ footer {
   flex-direction: column;
   justify-content: center;
   margin: 0 auto;
+  padding: 4px;
   max-width: 1200px;
   width: 100%;
-  padding: 5px;
+  padding-right: 10px;
 }
 .header {
   max-height: 100px;
@@ -68,6 +69,10 @@ footer {
   background-color: rgb(128, 131, 131);
   border-radius: 5px;
   margin: 5px;
+}
+.grid__media span {
+  color: #fff;
+  background-color: #003206;
 }
 .grid-1__box {
   width: 100%;
@@ -212,7 +217,11 @@ ul.submenu li a:hover i.fa-youtube::after {
 }
 @media all and (max-width: 768px) {
   body {
-    font-size: 0.7em;
+    font-size: 0.4em;
+  }
+  .header-content img {
+    width: 30px;
+    height: 30px;
   }
 }
 @media all and (max-width: 320px) {
@@ -220,7 +229,32 @@ ul.submenu li a:hover i.fa-youtube::after {
     font-size: 0.3em;
   }
   .header-content img {
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .conteiner {
+    max-width: 100%;
+  }
+  .conteiner-box span {
+    background-color: aqua;
+  }
+}
+@media (max-width: 768px) {
+  .conteiner {
+    max-width: 50%;
+  }
+  .conteiner-box span {
+    background-color: #d30069;
+  }
+}
+@media (max-width: 640px) {
+  .conteiner {
+    max-width: 40%;
+  }
+  .conteiner-box span {
+    background-color: #003280;
   }
 }
