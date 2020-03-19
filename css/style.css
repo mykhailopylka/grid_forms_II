@@ -257,4 +257,7 @@ ul.submenu li a:hover i.fa-youtube::after {
   .conteiner-box span {
     background-color: #003280;
   }
+  ul.submenu li a i.fa {
+    margin: 5px;
+  }
 }
